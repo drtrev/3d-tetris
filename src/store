@@ -1,0 +1,279 @@
+Standalone.
+face: 0, allocatedVertex: 0, vertex: 1
+face: 0, allocatedVertex: 1, vertex: 2
+face: 0, allocatedVertex: 2, vertex: 3
+i == 1
+face: 1, allocatedVertex: 1, vertex: 3
+face: 1, allocatedVertex: 3, vertex: 4
+i == 2
+face: 1, allocatedVertex: 2, vertex: 4
+i == 0
+i == 2
+i == 4
+i == 2
+nFaces: 4
+nVertices: 6
+face: 0, allocatedVertex: 0, vertex: 1
+face: 0, allocatedVertex: 1, vertex: 2
+face: 0, allocatedVertex: 2, vertex: 3
+i == 1
+face: 1, allocatedVertex: 1, vertex: 3
+face: 1, allocatedVertex: 3, vertex: 4
+i == 2
+face: 1, allocatedVertex: 2, vertex: 4
+i == 0
+i == 2
+i == 4
+i == 2
+i == 4
+i == 5
+i == 6
+i == 5
+i == 2
+face: 6, allocatedVertex: 2, vertex: 8
+i == 3
+face: 6, allocatedVertex: 3, vertex: 8
+face: 6, allocatedVertex: 8, vertex: 9
+i == 3
+face: 7, allocatedVertex: 3, vertex: 9
+face: 7, allocatedVertex: 9, vertex: 10
+i == 8
+face: 7, allocatedVertex: 8, vertex: 10
+i == 5
+i == 2
+i == 8
+i == 5
+i == 8
+i == 1
+face: 10, allocatedVertex: 1, vertex: 11
+face: 10, allocatedVertex: 11, vertex: 12
+i == 3
+face: 10, allocatedVertex: 3, vertex: 12
+i == 11
+face: 11, allocatedVertex: 11, vertex: 12
+face: 11, allocatedVertex: 12, vertex: 13
+i == 3
+face: 11, allocatedVertex: 3, vertex: 13
+nFaces: 12
+nVertices: 13
+face: 0, allocatedVertex: 0, vertex: 1
+face: 0, allocatedVertex: 1, vertex: 2
+face: 0, allocatedVertex: 2, vertex: 3
+i == 1
+face: 1, allocatedVertex: 1, vertex: 3
+face: 1, allocatedVertex: 3, vertex: 4
+i == 2
+face: 1, allocatedVertex: 2, vertex: 4
+i == 0
+i == 2
+i == 4
+i == 2
+i == 4
+i == 5
+i == 6
+i == 5
+i == 6
+i == 7
+i == 8
+i == 7
+i == 1
+face: 8, allocatedVertex: 1, vertex: 10
+face: 8, allocatedVertex: 10, vertex: 11
+i == 3
+face: 8, allocatedVertex: 3, vertex: 11
+i == 10
+face: 9, allocatedVertex: 10, vertex: 11
+face: 9, allocatedVertex: 11, vertex: 12
+i == 3
+face: 9, allocatedVertex: 3, vertex: 12
+nFaces: 10
+nVertices: 12
+face: 0, allocatedVertex: 0, vertex: 1
+face: 0, allocatedVertex: 1, vertex: 2
+face: 0, allocatedVertex: 2, vertex: 3
+i == 1
+face: 1, allocatedVertex: 1, vertex: 3
+face: 1, allocatedVertex: 3, vertex: 4
+i == 2
+face: 1, allocatedVertex: 2, vertex: 4
+i == 0
+i == 2
+i == 4
+i == 2
+i == 4
+i == 5
+i == 6
+i == 5
+i == 2
+face: 6, allocatedVertex: 2, vertex: 8
+i == 3
+face: 6, allocatedVertex: 3, vertex: 8
+face: 6, allocatedVertex: 8, vertex: 9
+i == 3
+face: 7, allocatedVertex: 3, vertex: 9
+face: 7, allocatedVertex: 9, vertex: 10
+i == 8
+face: 7, allocatedVertex: 8, vertex: 10
+i == 5
+i == 2
+i == 8
+i == 5
+i == 8
+i == 3
+face: 10, allocatedVertex: 3, vertex: 11
+face: 10, allocatedVertex: 11, vertex: 12
+i == 9
+face: 10, allocatedVertex: 9, vertex: 12
+i == 11
+face: 11, allocatedVertex: 11, vertex: 12
+face: 11, allocatedVertex: 12, vertex: 13
+i == 9
+face: 11, allocatedVertex: 9, vertex: 13
+nFaces: 12
+nVertices: 13
+face: 0, allocatedVertex: 0, vertex: 1
+face: 0, allocatedVertex: 1, vertex: 2
+face: 0, allocatedVertex: 2, vertex: 3
+i == 1
+face: 1, allocatedVertex: 1, vertex: 3
+face: 1, allocatedVertex: 3, vertex: 4
+i == 2
+face: 1, allocatedVertex: 2, vertex: 4
+i == 0
+i == 2
+i == 4
+i == 2
+i == 4
+i == 5
+i == 6
+i == 5
+i == 2
+face: 6, allocatedVertex: 2, vertex: 8
+i == 3
+face: 6, allocatedVertex: 3, vertex: 8
+face: 6, allocatedVertex: 8, vertex: 9
+i == 3
+face: 7, allocatedVertex: 3, vertex: 9
+face: 7, allocatedVertex: 9, vertex: 10
+i == 8
+face: 7, allocatedVertex: 8, vertex: 10
+i == 5
+i == 2
+i == 8
+i == 5
+i == 8
+face: 10, allocatedVertex: 11, vertex: 12
+face: 10, allocatedVertex: 12, vertex: 13
+face: 10, allocatedVertex: 13, vertex: 14
+i == 12
+face: 11, allocatedVertex: 12, vertex: 14
+face: 11, allocatedVertex: 14, vertex: 15
+i == 13
+face: 11, allocatedVertex: 13, vertex: 15
+nFaces: 12
+nVertices: 15
+face: 0, allocatedVertex: 0, vertex: 1
+face: 0, allocatedVertex: 1, vertex: 2
+face: 0, allocatedVertex: 2, vertex: 3
+i == 1
+face: 1, allocatedVertex: 1, vertex: 3
+face: 1, allocatedVertex: 3, vertex: 4
+i == 2
+face: 1, allocatedVertex: 2, vertex: 4
+i == 0
+i == 2
+i == 4
+i == 2
+i == 4
+i == 5
+i == 6
+i == 5
+i == 5
+face: 6, allocatedVertex: 5, vertex: 8
+face: 6, allocatedVertex: 8, vertex: 9
+face: 6, allocatedVertex: 9, vertex: 10
+i == 8
+face: 7, allocatedVertex: 8, vertex: 10
+face: 7, allocatedVertex: 10, vertex: 11
+i == 9
+face: 7, allocatedVertex: 9, vertex: 11
+i == 7
+i == 5
+i == 9
+i == 7
+i == 9
+i == 7
+i == 11
+i == 12
+i == 11
+nFaces: 12
+nVertices: 14
+face: 0, allocatedVertex: 0, vertex: 1
+face: 0, allocatedVertex: 1, vertex: 2
+face: 0, allocatedVertex: 2, vertex: 3
+i == 1
+face: 1, allocatedVertex: 1, vertex: 3
+face: 1, allocatedVertex: 3, vertex: 4
+i == 2
+face: 1, allocatedVertex: 2, vertex: 4
+i == 0
+i == 2
+i == 4
+i == 2
+i == 4
+i == 5
+i == 6
+i == 5
+i == 6
+i == 7
+i == 8
+i == 7
+i == 5
+face: 8, allocatedVertex: 5, vertex: 10
+face: 8, allocatedVertex: 10, vertex: 11
+face: 8, allocatedVertex: 11, vertex: 12
+i == 10
+face: 9, allocatedVertex: 10, vertex: 12
+face: 9, allocatedVertex: 12, vertex: 13
+i == 11
+face: 9, allocatedVertex: 11, vertex: 13
+i == 7
+i == 5
+i == 11
+i == 7
+i == 11
+nFaces: 12
+nVertices: 14
+face: 0, allocatedVertex: 0, vertex: 1
+face: 0, allocatedVertex: 1, vertex: 2
+face: 0, allocatedVertex: 2, vertex: 3
+i == 1
+face: 1, allocatedVertex: 1, vertex: 3
+face: 1, allocatedVertex: 3, vertex: 4
+i == 2
+face: 1, allocatedVertex: 2, vertex: 4
+i == 0
+i == 2
+i == 4
+i == 2
+i == 4
+i == 5
+i == 6
+i == 5
+i == 2
+face: 6, allocatedVertex: 2, vertex: 8
+i == 3
+face: 6, allocatedVertex: 3, vertex: 8
+face: 6, allocatedVertex: 8, vertex: 9
+i == 3
+face: 7, allocatedVertex: 3, vertex: 9
+face: 7, allocatedVertex: 9, vertex: 10
+i == 8
+face: 7, allocatedVertex: 8, vertex: 10
+i == 5
+i == 2
+i == 8
+i == 5
+i == 8
+nFaces: 10
+nVertices: 11

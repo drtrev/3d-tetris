@@ -1,0 +1,237 @@
+8/11/05 (Trevor Dodds)
+
+cve.cc
+---------
+Changed the picking calculations - no longer relative to mouse but to centre of screen (crosshair)
+which could be a few pixels different each frame.
+Changed it to be relative to the viewport in the y axis (so picking works on widescreen SGI machines)
+
+
+14/6/05 (Roy Ruddle)
+
+server.cc
+---------
+comment out:
+//numReadable = select(maxSock + 1, &readSocks, &writeSocks, NULL, &timeout);
+and insert (minimise CPU time used by 'server'):
+numReadable = select(maxSock + 1, &readSocks, &writeSocks, NULL, NULL);
+ 
+pawn.cc
+-------
+Various edits to move(), accelerate(), etc. so speed and distance travelled
+is independent of framerate
+ 
+block.cc
+--------
+Edits to move() and turnGlobalReference() so speed and distance travelled
+is independent of framerate
+ 
+Added matrixCorrectRoundingError() to overcome rounding error caused by
+doing incremental rotations, and which causes game to become unplayable.
+This function is a horrible hack but it does appear to work + is all I have
+time for.
+
+game.h
+------
+Added so NEW_BLOCK_COUNT_START, NEW_BLOCK_COUNT_MIN and NEW_BLOCK_COUNT_DECREASE
+aren't separately defined in server.cc (secs) and cve.cc (ms)
+
+8/6/05
+- made log file output optional with #define LOG_OUTPUT
+- made TEXTURE_PATH an optional environment variable
+7/6/05
+- made glutPostRedisplay at start of idle
+- changed collision array to be an array not a vector
+- made checkForPlane only call every 5 loops (speedCount)
+- made texture.h report missing texture files.
+17/3/05
+- tested solo slow game
+- made it slightly less slow (1.25 * instead of 1.5 *)
+- made newblock timer increase for slow game
+- made blocks move using their speed variable
+- changed block speed from 0.1 to 0.15
+- checked log output
+- need to set gameNumber and default speed when messing around
+- tested game at max speed
+- moving blocks faster helps
+- it's the new block time that makes it impossible
+- note that server does not increase block time
+14/3/05
+- made clients send a layer found flag to server when they've got a layer
+- when server receives two of these it sends a layer remove flag back to the
+  clients
+- layer's are then removed
+- working on getting server to expire layer found info because if a client
+  sends it and then the master tells changes things then client gets a layer
+  again this time master sends found too there are now three messages - two
+  will be deleted other one should expire
+3/3/05
+- made both master and slave send block data
+- slave overflowed so increased MAXRECVDATASIZE from 500 to 1000
+2/3/05
+- made client send block id not element number
+- it's all about collision trails - blocks were falling down into spaces left
+  by turning blocks which then collided and snapped back to their original
+  position but this position was now occupied
+  So implemented collision trails which are cleared when movement/turning is
+  complete
+- cleared collision trail on removedLayers
+1/3/05
+- seem to have fixed synchronisation problem in two steps:
+  1. Client only sets gotConfirmed if the received information is the same as
+  the last received (block.confirmed...) information
+  2. Block only snap to confirmed if it's different to lastConfirmed... i.e. it
+  doesn't snap to the same place twice as it's assume to have moved on by then
+  Exception is when it's grounded it will snap once again to lastConfirmed
+- it should be noted that Block::toConfirmed does not set grounded to true
+- also Block::toConfirmed now resets gotConfirmed to false as it should
+26/2/05
+- improved training message and score layout
+- tested one player and got 70 points
+- increased number of sides to welcome cylinder
+25/2/05
+- added background to messages
+- added welcome
+- fixed reflections
+- made avatars reflect
+- problem is that if slave moves a piece master sends it's current position,
+  then moves it, then slave snaps to received position
+23/2/05
+- added training levels
+- only send position if it's changed
+- send data after receiving data incase block move was received
+- marking when block has received confirmed data and only setting to confirmed values once
+22/2/05
+- fixed remote connection to reset counter and use the right blend func / disable textures
+- made things work on timers i.e. idle and postredisplay
+21/2/05
+- working on adding wall marks on boundary collision
+- added wallmarks
+15/2/05
+- fixed segfault - client was trying to send block details when there were no blocks
+- put block unground thing back to five
+14/2/05
+- added cool graphics!
+- buffered manipulation
+- lots of changes
+- tests
+- points including more points for more than one line
+- local connections
+13/2/05
+- buffered movement
+- sent block details as 'confirmed' vars
+12/2/05
+- working on adding buffered movement
+- made server send to all and all movement done remotely!!
+- working on sending block details!
+- server was not breaking for loop when finding start and end characters so it always found last characters in the string!!
+11/2/05
+- added a buffer class and used for sending data in client to make sure that it doesn't get missed out because of a block
+- tested buffer class!
+- absolute mission fixed server message bug. Lessons: never send a null character, that marks end of data!
+  so added type + '0'. Also since type could have been STX this was picked up by doClient because the for
+  loop was not broken upon finding an STX instead it kept going regardless so startIndex was left after
+  last STX!!
+- only started adding new blocks when there are NUM_PLAYERS users
+- synchronised gravity by getting server to send out start signal
+- about to buffer movement in client - see notes
+10/2/05
+- checked that data is only sent when a movement or turn takes place (although it may be a hit)
+- checked that data is only acted on when it's not originating from the same user
+- made movements received whilst a block is still moving add to current movement if block is moving due to remote user
+- stopped server sending out messages to the clients that sent them
+- neatened up doServer by splitting it into seperate send/receive functions
+- made server only send if all connections are writable (this is bad but it stops data being deleted before its sent to
+  a user, or if the data is not deleted it stops a user receiving the same data twice)
+- made client move startIndex back if there is not enough data for a chunk. That way when array is shifted back,
+  STX is still read next time.
+9/2/05
+- made connection, rotation and movement data send across network
+- added master and slave idea
+8/2/05
+- made cve output fps to stdout and display fps on screen
+- implemented connection bar from user to active block
+7/2/05
+- note need to acknowledge Beej
+- changed start and end of data to 2 (STX - start of text) and 3 (ETX - end of text)
+- stopped server sending start of data character out to clients
+- added comments to server
+- made server send start char again (because client expects it)
+- changed client to use 2 instead of s
+6/2/05
+- fixed collisionArray bugs (blocks weren't falling down after layer destroyed because lastStored wasn't set in new
+  split blocks and collisionArray wasn't cleared where blocks were removed)
+- increased collisionArray height to account for blocks sticking up above BLOCKSTARTY
+- increased explosion speed
+- raised boundaries to BLOCK_START_Y
+- highlighted pivot block
+- fixed weird bug where right button caused operations on selectedBlock even if selectedBlock was -1!!
+5/2/05
+- cleared outputBlocks so it should work now for when two layers are removed at the same time
+- noted reflections are clipped in negative y but floor is -2.5 y so they could slightly come above floor
+- added warpBack so that mouse movement is allowed without warp back until movement is captured.
+  extra constraint is that if block cannot be moved (e.g. it's already moving or turning) then mouse is warped back.
+- added #def's for gravity/newblock speed, block start and boundaries
+4/2/05
+- fixed layer bug
+- fixed segfault mess (although it still segfaults on exit sometimes)
+- draw explosions on top of blocks
+- changed pivot point
+- made pivot point adjustable and set it to different values for each block
+- made blocks above current block unGrounded when current block is moved or rotated
+3/2/05
+- fixed bug so it should be checking all layers now
+- went really slow upon completing second layer
+- made it so blocks don't try to move down after 5 attempts. this is reset when they are selected/manipulated,
+  but does not seem to work when layer is complete and blocks were resting on that layer
+- Slowdown problem? When a block is split, it is checked for a layer again, recursively??
+2/2/05
+- attempting to get rid of 'jumping' when block layers are removed by just shifting array elements
+- (sorted now) note that if a layer is removed from the middle of a block then top half of block won't drop at the moment
+- ok decided to split block into individual pieces when bits are removed in removeLayer(), then drop original
+  block from vector
+- individual pieces are created with interactive set to 'false' so they can't be manipulated
+- individual pieces are created at rounded coordinates to get rid of any rounding errors causing them to 'jump'
+- block is dropped from vector in cve.cc, in the function removeBlock
+- individual pieces drop to the ground ok
+- all layers are checked
+- added explosions
+- TODO - reflect explosions?
+- there is slow down upon gravity. Perhaps blocks should store whether they moved last time or not
+  and if they didn't then gravity shouldn't affect them. A layer disappearing should reset this.
+  may need to check every so many loops e.g. blocks below them fall down...
+1/2/05
+- made blocks drop down when layer disappears - problem: they try to move down again due to rounding errors
+31/1/05
+- made blocks appear at regular intervals, with random block types
+- made first layer disappear
+28/1/05
+- made blocks different colours
+- added reflections (note - should report inspiration from nehe. Also, note how you can see blocks appear even
+  when you're looking down!)
+- added border
+24/1/05
+- added all the cube puzzel shapes
+23/1/05
+- lots of progress
+- added arrows
+- added mouse support for moving
+- textured
+- corrected collision problems
+- removed axis guide from blocks
+- added gravity
+- added new L-shaped block
+- blocks now check their own collision
+- fixed flickering movement (rounding)
+- block sometimes snapped back as if hit when sliding past another:
+  this was due to diagonal movement. Upon disabling diagonal movement, the zig-zag effect was lost.
+  One orthogonal direction was always taking priority. I needed to give priority to the direction that
+  didn't have it last. See comments in pressRightButton condition of mouseActiveMove()
+- stopped blocks turning through the ground
+- rounded movement:
+  NOTE: turning is still not rounded. Dealt with this temporarily by relaxing collision conditions (i.e. < 4.9
+  instead of < 5.0 and wy > wy2 - 0.1 instead of wy > wy2
+13/12/04
+- changed shininess of block to 128 for smoother shading
+10/12/04
+- initialised connectionErrorCount in constructor

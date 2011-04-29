@@ -1,0 +1,61 @@
+To compile, use
+% make all
+
+Run the server
+% ./server > trafficLogFile
+
+Run the clients using
+% ./cve <serverAddress> > logfile
+
+E.g.
+% ./cve cslin-gps > logfile
+
+The game will run four single-player games (the first one slower than normal)
+followed by four collaborative games. To skip straight to collaborative games
+set START_COLLABORATIVE to 1 in cve.cc (set to 0 otherwise). Then recompile with
+% make cve
+
+The training process will still appear but can be skipped with the Return key.
+
+To exit the game press the Escape key.
+
+If the resolution of the screen is altered when the game has ended, then use
+Ctrl-Alt-<NumPad+> or Ctrl-Alt-<NumPad-> to change the resolution back again.
+
+For evaluation purposes the server should increase the rate of new block creation.
+This is NOT set as it stands (because it requires resetting the server between
+games). See the comments in server.cc for details of setting this up.
+
+The game is controlled using the mouse and keyboard. Many people prefer to use
+the arrow keys to move around, with 'Home' and 'End' for up and down. People
+who play games a lot sometimes prefer to use the 'W', 'A', 'S' and 'D' keys,
+with 'C' and 'Spacebar'. Both alternatives are accepted.
+
+The left mouse button rotates blocks. The right mouse button translates blocks.
+
+To invert the mouse-look set invertMouse to true.
+
+The game should be compatible with windows because of the use of GLUT, but
+network code would need to be changed.
+
+Known issues:
+  Problem: in collaborative games, due to unsynchronised game ends, clients may
+  miss a block or all the blocks in a new game.
+
+  Solution: if this occurs, exit and set START_COLLABORATIVE in cve.cc, reset the
+  server, recompile and give it another go.
+
+  Problem: continous manipulation of a block that has just been created prevents
+  it from falling and results in the creation of a new block appearing in the
+  same place and therefore ending the game.
+
+  Solutions: let blocks fall down a layer before manipulating them, or move them
+  out of the centre, or don't manipulate them continuously for a long period of
+  time when they appear.
+
+  Problem: in collaborative games, the blocks on the slave computer 'jump'.
+
+  Solution: this is because they are matching the master computer.
+  Synchronisation errors are corrected but sometimes there is a delay and so a
+  change is observed. The first person to enter the collaborative game becomes
+  the 'master', so try taking it in turns to be that person.
