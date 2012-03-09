@@ -29,6 +29,7 @@
 #ifndef _TEXTURE_
 #define _TEXTURE_
 
+#include <cstdio>
 #include <iostream>
 #include <vector>
 #include <GL/glut.h>
@@ -38,7 +39,7 @@ using namespace std;
 class Texture {
 
   private:
-    static vector <char*> filenames;
+    static vector <string> filenames;
     struct Image {
       unsigned sizeX;
       unsigned sizeY;
@@ -69,7 +70,7 @@ class Texture {
       tex[8] = texPath + "mountain.bmp";
 
       for (int i = 0; i < 9; i++)
-        filenames.push_back((char*) tex[i].c_str());
+        filenames.push_back(tex[i]);
 
       cout << "First texture is: " << filenames[0] << endl;
     }
@@ -77,7 +78,7 @@ class Texture {
     // Load an image from bitmap file
     // This is taken from the linux code of the texture mapping tutorial
     // submitted to NeHe (http://nehe.gamedev.net) by Richard Campbell
-    static int imageLoad(char *filename, Image *image)
+    static int imageLoad(const char *filename, Image *image)
     {
       FILE *file;
       unsigned size;                 // size of the image in bytes.
@@ -176,7 +177,9 @@ class Texture {
         //tempTex = (Image *) malloc(sizeof(Image)); // Allocate memory for textures
         tempTex = new Image();
 
-        if(!imageLoad(filenames[x], tempTex))
+        cout << "Confirming: first texture is: " << filenames[0] << endl;
+
+        if(!imageLoad(filenames[x].c_str(), tempTex))
         {
           cerr << "Error allocating space for texture" << endl;
           cerr << "Texture: " << x << " -- " << filenames[x] << endl;

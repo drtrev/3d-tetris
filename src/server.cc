@@ -37,6 +37,9 @@
 #include <arpa/inet.h>
 #include <signal.h>
 #include <time.h>
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
 
 #include "game.h"
 

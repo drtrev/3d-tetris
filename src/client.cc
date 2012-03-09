@@ -18,6 +18,8 @@
  */
 
 #include "client.h"
+#include <cstdio>
+#include <cstring>
 
 // The client constructor
 Client::Client()
@@ -494,9 +496,9 @@ void Client::doClient(Pawn& player, vector <Human>& humans, vector <Block> &bloc
 
       // if while loop will fail, go back to original index so STX is not lost
       // IF ALTERING CHUNK SIZE DO IT IN THE WHILE LOOP TOO!
-      if (!((flag == FLAG_POSITION && chunk > 39) || (flag == FLAG_LOCK && chunk > 0) || (flag == FLAG_MANIPULATE && chunk > 2)
+      if (!(((flag == FLAG_POSITION && chunk > 39) || (flag == FLAG_LOCK && chunk > 0) || (flag == FLAG_MANIPULATE && chunk > 2)
              || (flag == FLAG_NEW_BLOCK && chunk > 0) || (flag == FLAG_MOVE && chunk > 1) || (flag == FLAG_GRAVITY && chunk > -1)
-             || (flag == FLAG_BLOCK && chunk > 19 * 8 + 1) || (flag == FLAG_LAYER_FOUND && chunk > 0) || (flag == FLAG_LAYER_REMOVE && chunk > 0)
+             || (flag == FLAG_BLOCK && chunk > 19 * 8 + 1) || (flag == FLAG_LAYER_FOUND && chunk > 0) || (flag == FLAG_LAYER_REMOVE && chunk > 0))
              && !overflow)) {
         // since we've not got enough data, the while loop will not execute (flag is FLAG_NONE)
         // and the array will be shifted back based on startIndex. But we want the STX (2) character
@@ -508,10 +510,10 @@ void Client::doClient(Pawn& player, vector <Human>& humans, vector <Block> &bloc
       // also can't process data if we have an overflow
       // do add a new flag we need to add a condition here
       // IF ALTERING CHUNK SIZE DO IT IN THE ABOVE CONDITION TOO!
-      while ((flag == FLAG_POSITION && chunk > 39) || (flag == FLAG_LOCK && chunk > 0) || (flag == FLAG_MANIPULATE && chunk > 2)
+      while (((flag == FLAG_POSITION && chunk > 39) || (flag == FLAG_LOCK && chunk > 0) || (flag == FLAG_MANIPULATE && chunk > 2)
              || (flag == FLAG_NEW_BLOCK && chunk > 0) || (flag == FLAG_MOVE && chunk > 1) || (flag == FLAG_GRAVITY && chunk > -1)
              || (flag == FLAG_BLOCK && chunk > 19 * 8 + 1) || (flag == FLAG_LAYER_FOUND && chunk > 0)
-             || (flag == FLAG_LAYER_REMOVE && chunk > 0) && !overflow) {
+             || (flag == FLAG_LAYER_REMOVE && chunk > 0)) && !overflow) {
 
         // if it's not you
         if (id != dataId) {

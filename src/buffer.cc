@@ -18,6 +18,7 @@
  */
 
 #include "buffer.h"
+#include <cstring>
 
 Buffer::Buffer()
 {

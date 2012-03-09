@@ -42,6 +42,7 @@
 #include <vector>
 #include <deque>
 #include <string>
+#include <cstring>
 #include "pawn.h"
 #include "trig.h"
 #include "client.h"
@@ -73,7 +74,7 @@ using namespace std;
 // set the following to 1. (Otherwise set to 0).
 
 #ifndef START_COLLABORATIVE
-#define START_COLLABORATIVE 0
+#define START_COLLABORATIVE 1
 #endif
 
 // Do we want to output information to the standard out, for logfiles?
@@ -279,7 +280,7 @@ float Trig::asinValues[121];
 
 // the texture numbers and filenames
 vector <int> Texture::texId;
-vector <char*> Texture::filenames;
+vector <string> Texture::filenames;
 // this is needed so filenames can be kept and referenced by other functions in texture.h
 
 
@@ -2405,7 +2406,7 @@ void mouseActiveMove(int x, int y)
 
           // angleX is -180 to 180
           if (angleZ > 179.0 && angleZ < 179.0) mx = -mx;
-          if (angleX > -0.1 && angleX < 0.1 || angleX > 179.0 || angleX < -179.0) {
+          if ((angleX > -0.1 && angleX < 0.1) || angleX > 179.0 || angleX < -179.0) {
             if (angleX > 179.0 || angleX < -179.0) mx = -mx;
             if (mx > 0) newAngle = angleY + 90;
             else newAngle = angleY - 90;
@@ -2425,7 +2426,7 @@ void mouseActiveMove(int x, int y)
           warpBack = true; // got movement so warp back
 
           if (pAngleY == 90) my = -my;
-          if (angleY > 359.0 || angleY < 0.1 || angleY > 179.0 && angleY < 181.0) {
+          if (angleY > 359.0 || angleY < 0.1 || (angleY > 179.0 && angleY < 181.0)) {
             if (angleY > 179.0 && angleY < 181.0) my = -my;
             if (my < 0) newAngle = angleZ + 90;
             else newAngle = angleZ - 90;
@@ -2454,7 +2455,7 @@ void mouseActiveMove(int x, int y)
         }else if (abs(mx) < abs(my) - 1) { // turn up or down
           warpBack = true; // got movement so warp back
 
-          if (angleY > 359.0 || angleY < 0.1 || angleY > 179.0 && angleY < 181.0) {
+          if (angleY > 359.0 || angleY < 0.1 || (angleY > 179.0 && angleY < 181.0)) {
             if (angleY > 179.0 && angleY < 181.0) my = -my;
             if (my < 0) newAngle = angleX + 90;
             else newAngle = angleX - 90;
@@ -3117,8 +3118,8 @@ int main(int argc, char** argv)
 
   if (!FULL_SCREEN) {
     glutInitWindowPosition (0, 0);
-    glutInitWindowSize (1280, 1024);
-    //glutInitWindowSize (640, 480);
+    //glutInitWindowSize (1280, 1024);
+    glutInitWindowSize (640, 480);
     //glutInitWindowPosition (1, 450);
 
     // create the window
