@@ -1,8 +1,10 @@
 INCS = -I /usr/X11R6/include/
-LDLIBS = -lglut -lGLU -lGL -lXmu -lX11 -lm -lpthread -Wall -g -pg
+#LDLIBS = -lglut -lGLU -lGL -lXmu -lX11 -lm -lpthread -Wall -g -pg
+LDLIBS = -lglut -lGLU -lGL -lXmu -lX11 -lm -lpthread -Wall
 LDFLAGS = -L/usr/lib -L/usr/X11R6/lib/
 OBJECTS = pawn.o human.o client.o block.o explosion.o buffer.o
-CXXFLAGS = -Wall -g -pg $(INCS)
+#CXXFLAGS = -Wall -g -pg $(INCS)
+CXXFLAGS = -Wall $(INCS)
 
 all: cve server multiuser
 
