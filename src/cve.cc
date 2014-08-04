@@ -74,7 +74,7 @@ using namespace std;
 // set the following to 1. (Otherwise set to 0).
 
 #ifndef START_COLLABORATIVE
-#define START_COLLABORATIVE 1
+#define START_COLLABORATIVE 0
 #endif
 
 // Do we want to output information to the standard out, for logfiles?
