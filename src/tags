@@ -1,0 +1,650 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BACKLOG	server.cc	58;"	d	file:
+BLOCK_START_Y	block.h	39;"	d
+BLOCK_START_Y	cve.cc	162;"	d	file:
+BOUNDARY_MAX_X	block.h	34;"	d
+BOUNDARY_MAX_X	cve.cc	157;"	d	file:
+BOUNDARY_MAX_Z	block.h	36;"	d
+BOUNDARY_MAX_Z	cve.cc	159;"	d	file:
+BOUNDARY_MIN_X	block.h	33;"	d
+BOUNDARY_MIN_X	cve.cc	156;"	d	file:
+BOUNDARY_MIN_Z	block.h	35;"	d
+BOUNDARY_MIN_Z	cve.cc	158;"	d	file:
+BUFFER_SIZE	buffer.h	33;"	d
+Block	block.cc	/^Block::Block(int initId, int t, float initX, float initY, float initZ, bool initInteractive, int collisionArray[GAMEAREA_WIDTH][GAMEAREA_HEIGHT][GAMEAREA_DEPTH], float boundaries[])$/;"	f	class:Block
+Block	block.h	/^class Block : public Pawn {$/;"	c
+Buffer	buffer.cc	/^Buffer::Buffer()$/;"	f	class:Buffer
+Buffer	buffer.h	/^class Buffer {$/;"	c
+CLIENTWRAPPER_H	clientwrapper.h	28;"	d
+CXXFLAGS	Makefile	/^CXXFLAGS = -Wall $(INCS)$/;"	m
+Client	client.cc	/^Client::Client()$/;"	f	class:Client
+Client	client.h	/^class Client {$/;"	c
+ClientWrapper	clientwrapper.cc	/^ClientWrapper::ClientWrapper()$/;"	f	class:ClientWrapper
+ClientWrapper	clientwrapper.h	/^class ClientWrapper {$/;"	c
+DRAW_CONNECTION_COUNT_MAX	cve.cc	120;"	d	file:
+Explosion	explosion.cc	/^Explosion::Explosion(float initY)$/;"	f	class:Explosion
+Explosion	explosion.h	/^class Explosion {$/;"	c
+FLAG_BLOCK	client.h	57;"	d
+FLAG_BLOCK	clientwrapper.h	48;"	d
+FLAG_GAMEOVER	client.h	64;"	d
+FLAG_GAMEOVER	clientwrapper.h	55;"	d
+FLAG_GAMEOVER	server.cc	72;"	d	file:
+FLAG_GRAVITY	client.h	63;"	d
+FLAG_GRAVITY	clientwrapper.h	54;"	d
+FLAG_GRAVITY	server.cc	71;"	d	file:
+FLAG_LAYER_FOUND	client.h	65;"	d
+FLAG_LAYER_FOUND	clientwrapper.h	56;"	d
+FLAG_LAYER_FOUND	server.cc	73;"	d	file:
+FLAG_LAYER_REMOVE	client.h	66;"	d
+FLAG_LAYER_REMOVE	clientwrapper.h	57;"	d
+FLAG_LAYER_REMOVE	server.cc	74;"	d	file:
+FLAG_LOCK	client.h	54;"	d
+FLAG_LOCK	clientwrapper.h	45;"	d
+FLAG_MANIPULATE	client.h	55;"	d
+FLAG_MANIPULATE	clientwrapper.h	46;"	d
+FLAG_MASTER	client.h	60;"	d
+FLAG_MASTER	clientwrapper.h	51;"	d
+FLAG_MASTER	server.cc	68;"	d	file:
+FLAG_MOVE	client.h	56;"	d
+FLAG_MOVE	clientwrapper.h	47;"	d
+FLAG_NEW_BLOCK	client.h	62;"	d
+FLAG_NEW_BLOCK	clientwrapper.h	53;"	d
+FLAG_NEW_BLOCK	server.cc	70;"	d	file:
+FLAG_NONE	client.h	52;"	d
+FLAG_NONE	clientwrapper.h	43;"	d
+FLAG_POSITION	client.h	53;"	d
+FLAG_POSITION	clientwrapper.h	44;"	d
+FLAG_SLAVE	client.h	61;"	d
+FLAG_SLAVE	clientwrapper.h	52;"	d
+FLAG_SLAVE	server.cc	69;"	d	file:
+FULL_SCREEN	cve.cc	85;"	d	file:
+Face	cve.cc	/^struct Face$/;"	s	file:
+GAMEAREA_DEPTH	block.h	43;"	d
+GAMEAREA_HEIGHT	block.h	44;"	d
+GAMEAREA_WIDTH	block.h	42;"	d
+GAMEBLOCK_DEPTH	cve.cc	166;"	d	file:
+GAMEBLOCK_HEIGHT	cve.cc	167;"	d	file:
+GAMEBLOCK_WIDTH	cve.cc	165;"	d	file:
+GAMENUMBER_END	cve.cc	260;"	d	file:
+GAMENUMBER_FASTGAME	cve.cc	258;"	d	file:
+GAMENUMBER_NETWORK	cve.cc	259;"	d	file:
+GAMENUMBER_SOLO	cve.cc	257;"	d	file:
+GAMEOVER_COUNT_MAX	cve.cc	256;"	d	file:
+GAME_SPEED	pawn.h	42;"	d
+GRAVITY_COUNT_DECREASE	cve.cc	135;"	d	file:
+GRAVITY_COUNT_MIN	cve.cc	134;"	d	file:
+GRAVITY_COUNT_START	cve.cc	133;"	d	file:
+HIGH_RES	cve.cc	86;"	d	file:
+Human	human.cc	/^Human::Human(float setX, float setY, float setZ, float setAngleY, int t, int texFaceInit, int idInit)$/;"	f	class:Human
+Human	human.h	/^class Human : public Pawn {$/;"	c
+INCS	Makefile	/^INCS = -I \/usr\/X11R6\/include\/$/;"	m
+Image	texture.h	/^    struct Image {$/;"	s	class:Texture
+InitGLObjects	cve.cc	/^int InitGLObjects()							\/\/ Initialize Objects$/;"	f
+KillGLObjects	cve.cc	/^void KillGLObjects()$/;"	f
+LAYER_FOUND_EXPIRY_TIME	server.cc	76;"	d	file:
+LDFLAGS	Makefile	/^LDFLAGS = -L\/usr\/lib -L\/usr\/X11R6\/lib\/$/;"	m
+LDLIBS	Makefile	/^LDLIBS = -lglut -lGLU -lGL -lXmu -lX11 -lm -lpthread -Wall$/;"	m
+LOG_OUTPUT	cve.cc	81;"	d	file:
+LOG_OUTPUT	server.cc	49;"	d	file:
+MAXCLIENTS	server.cc	62;"	d	file:
+MAXRECVDATASIZE	client.h	49;"	d
+MAXRECVDATASIZE	clientwrapper.h	40;"	d
+MAXRECVDATASIZE	server.cc	60;"	d	file:
+MAX_SERVER_MESSAGE_SIZE	server.cc	65;"	d	file:
+MESSAGE_COUNT_MAX	cve.cc	241;"	d	file:
+MESS_AROUND	cve.cc	89;"	d	file:
+MODE_GLOBAL_REFERENCE	block.h	29;"	d
+MODE_OBJECT_REFERENCE	block.h	28;"	d
+MODE_VIEWING_REFERENCE	block.h	30;"	d
+MYPORT	server.cc	56;"	d	file:
+NEW_BLOCK_COUNT_DECREASE	game.h	34;"	d
+NEW_BLOCK_COUNT_MIN	game.h	33;"	d
+NEW_BLOCK_COUNT_START	game.h	32;"	d
+NUM_PLAYERS	server.cc	63;"	d	file:
+OBJECTS	Makefile	/^OBJECTS = pawn.o human.o client.o block.o explosion.o buffer.o$/;"	m
+PLAYER_BOUNDARY_MAX_X	pawn.h	53;"	d
+PLAYER_BOUNDARY_MAX_Y	pawn.h	54;"	d
+PLAYER_BOUNDARY_MAX_Z	pawn.h	55;"	d
+PLAYER_BOUNDARY_MIN_X	pawn.h	50;"	d
+PLAYER_BOUNDARY_MIN_Y	pawn.h	51;"	d
+PLAYER_BOUNDARY_MIN_Z	pawn.h	52;"	d
+PORT	client.h	48;"	d
+PORT	clientwrapper.h	39;"	d
+Pawn	pawn.cc	/^Pawn::Pawn()$/;"	f	class:Pawn
+Pawn	pawn.h	/^class Pawn {$/;"	c
+Plane	cve.cc	/^struct Plane$/;"	s	file:
+Point3f	cve.cc	/^struct Point3f$/;"	s	file:
+SECS_PER_FRAME	pawn.h	48;"	d
+SELECTBUFFER_SIZE	cve.cc	2239;"	d	file:
+SERVER_ID	client.h	68;"	d
+SERVER_ID	clientwrapper.h	59;"	d
+SERVER_ID	server.cc	89;"	d	file:
+SHADOW_INFINITY	cve.cc	293;"	d	file:
+SKYBOX_MAX_X	cve.cc	1206;"	d	file:
+SKYBOX_MAX_Y	cve.cc	1208;"	d	file:
+SKYBOX_MAX_Z	cve.cc	1210;"	d	file:
+SKYBOX_MIN_X	cve.cc	1205;"	d	file:
+SKYBOX_MIN_Y	cve.cc	1207;"	d	file:
+SKYBOX_MIN_Z	cve.cc	1209;"	d	file:
+START_COLLABORATIVE	cve.cc	77;"	d	file:
+ShadowedObject	cve.cc	/^struct ShadowedObject$/;"	s	file:
+TEXT_ALPHA_START	cve.cc	249;"	d	file:
+TEXT_Y_START	cve.cc	248;"	d	file:
+TIMER_IDLE	cve.cc	150;"	d	file:
+TIMER_REDISPLAY	cve.cc	151;"	d	file:
+TRAFFIC_ANALYSIS_COUNT	server.cc	85;"	d	file:
+TRAINING_LEVELS	cve.cc	234;"	d	file:
+TRAINING_TIME	cve.cc	233;"	d	file:
+Texture	texture.h	/^class Texture {$/;"	c
+Trig	trig.h	/^class Trig {$/;"	c
+VMatMult	cve.cc	/^void VMatMult(GLfloat M[16], GLfloat v[4])$/;"	f
+WELCOME_COUNT_MAX	cve.cc	247;"	d	file:
+WindowDump	cve.cc	/^int WindowDump(int width,int height,int stereo)$/;"	f
+_BLOCK_	block.h	21;"	d
+_BUFFER_	buffer.h	29;"	d
+_CLIENT_	client.h	34;"	d
+_EXPLOSION_	explosion.h	29;"	d
+_GAME_	game.h	21;"	d
+_HUMAN_	human.h	30;"	d
+_PAWN_	pawn.h	31;"	d
+_TEXTURE_	texture.h	30;"	d
+_TRIG_	trig.h	30;"	d
+a	cve.cc	/^	GLfloat a, b, c, d;$/;"	m	struct:Plane	file:
+accel	pawn.h	/^    float speed, accel, maxSpeed, strafeRightSpeed;$/;"	m	class:Pawn
+accelerate	pawn.cc	/^void Pawn::accelerate( const float timeSecs )$/;"	f	class:Pawn
+addVertex	cve.cc	/^int addVertex(ShadowedObject &obj, int &vertex, int x, int y, int z, int dx, int dy, int dz)$/;"	f
+alpha	explosion.h	/^    float size, growSpeed, alpha, fadeSpeed;$/;"	m	class:Explosion
+ambient0	cve.cc	/^GLfloat ambient0[] = { 0.3, 0.3, 0.3, 0.3 };$/;"	v
+ambient1	cve.cc	/^GLfloat ambient1[] = { 0.2, 0.2, 0.2, 0.2 };$/;"	v
+analyseTraffic	server.cc	/^void analyseTraffic()$/;"	f
+angleX	pawn.h	/^    float angleX, angleY, angleZ;$/;"	m	class:Pawn
+angleY	pawn.h	/^    float angleX, angleY, angleZ;$/;"	m	class:Pawn
+angleZ	pawn.h	/^    float angleX, angleY, angleZ;$/;"	m	class:Pawn
+anim	human.h	/^    bool anim;$/;"	m	class:Human
+arrows	block.h	/^    bool arrows; \/\/ draw arrows?$/;"	m	class:Block
+asinValues	cve.cc	/^float Trig::asinValues[121];$/;"	m	class:Trig	file:
+asinValues	trig.h	/^    static float asinValues[121];$/;"	m	class:Trig
+asn	trig.h	/^    static float asn(float n) {$/;"	f	class:Trig
+assignedMaster	server.cc	/^bool assignedMaster = false, startedGravity = false;$/;"	v
+atmoColor	cve.cc	/^GLfloat atmoColor[] = { 0.9, 0.7, 0.3, 1.0 }; \/\/ for fog$/;"	v
+b	cve.cc	/^	GLfloat a, b, c, d;$/;"	m	struct:Plane	file:
+blockId	cve.cc	/^int blockId = 1, newBlockTimer = NEW_BLOCK_COUNT_START; \/\/ for making new blocks appear$/;"	v
+blockScore	cve.cc	/^int blockScore = 0; \/\/ points for blocks in game area$/;"	v
+blocks	cve.cc	/^vector <Block> blocks;$/;"	v
+boundaries	cve.cc	/^float boundaries[] = {BOUNDARY_MIN_X, BOUNDARY_MAX_X, BOUNDARY_MIN_Z, BOUNDARY_MAX_Z};$/;"	v
+brake	pawn.cc	/^void Pawn::brake( const float timeSecs )$/;"	f	class:Pawn
+buf	server.cc	/^char buf[MAXRECVDATASIZE]; \/\/ for receiving data$/;"	v
+buffer	buffer.h	/^    char buffer[BUFFER_SIZE];$/;"	m	class:Buffer
+c	cve.cc	/^	GLfloat a, b, c, d;$/;"	m	struct:Plane	file:
+calculatePlane	cve.cc	/^void calculatePlane( const ShadowedObject& object, Face& face )$/;"	f
+cameraHeight	cve.cc	/^float cameraHeight = 0.0;$/;"	v
+cancelBlock	cve.cc	/^bool cancelBlock = false;$/;"	v
+castShadow	cve.cc	/^void castShadow( ShadowedObject& object, GLfloat *lightPosition)$/;"	f
+ceil	pawn.h	/^    float ground, height, ceil;$/;"	m	class:Pawn
+changeGround	pawn.cc	/^void Pawn::changeGround( const float amount, const float timeSecs )$/;"	f	class:Pawn
+changeTargetPosition	block.cc	/^void Block::changeTargetPosition(float nx, float ny, float nz)$/;"	f	class:Block
+charToInt	client.cc	/^int Client::charToInt(char c)$/;"	f	class:Client
+charToInt	clientwrapper.cc	/^int ClientWrapper::charToInt(char c)$/;"	f	class:ClientWrapper
+checkCollision	block.cc	/^bool Block::checkCollision(int collisionArray[GAMEAREA_WIDTH][GAMEAREA_HEIGHT][GAMEAREA_DEPTH], float boundaries[])$/;"	f	class:Block
+checkForPlane	cve.cc	/^void checkForPlane()$/;"	f
+clCount	server.cc	/^int clCount = 0, clMax = 10; \/\/ client counter (how many clients we have) and maximum number$/;"	v
+clMax	server.cc	/^int clCount = 0, clMax = 10; \/\/ client counter (how many clients we have) and maximum number$/;"	v
+clSocks	server.cc	/^int clSocks[10]; \/\/ client sockets$/;"	v
+clearCollisionArray	cve.cc	/^void clearCollisionArray()$/;"	f
+clearCollisionTrail	block.cc	/^void Block::clearCollisionTrail(int collisionArray[GAMEAREA_WIDTH][GAMEAREA_HEIGHT][GAMEAREA_DEPTH], bool storeNewPosition)$/;"	f	class:Block
+client	clientwrapper.h	/^    Client client;$/;"	m	class:ClientWrapper
+client	cve.cc	/^Client client;$/;"	v
+closeConnection	client.cc	/^int Client::closeConnection()$/;"	f	class:Client
+closeConnection	clientwrapper.cc	/^int ClientWrapper::closeConnection()$/;"	f	class:ClientWrapper
+collisionArray	cve.cc	/^int collisionArray[GAMEBLOCK_WIDTH][GAMEBLOCK_HEIGHT+1][GAMEBLOCK_DEPTH];$/;"	v
+color	block.h	/^    float color[4];$/;"	m	class:Block
+confirmedMatrix	block.h	/^    float matrix[16], confirmedMatrix[16];$/;"	m	class:Block
+confirmedX	block.h	/^    float confirmedX, confirmedY, confirmedZ;$/;"	m	class:Block
+confirmedY	block.h	/^    float confirmedX, confirmedY, confirmedZ;$/;"	m	class:Block
+confirmedZ	block.h	/^    float confirmedX, confirmedY, confirmedZ;$/;"	m	class:Block
+connectionErrorCount	human.h	/^    int connectionErrorCount;$/;"	m	class:Human
+controllingLight	cve.cc	/^int controllingLight = 0;$/;"	v
+cosValues	cve.cc	/^float Trig::cosValues[721];$/;"	m	class:Trig	file:
+cosValues	trig.h	/^    static float cosValues[721];$/;"	m	class:Trig
+crosshairStereo	cve.cc	/^float crosshairStereo = 0.0;$/;"	v
+cs	trig.h	/^    static float cs(float n) {$/;"	f	class:Trig
+cubeObj	cve.cc	/^ShadowedObject cubeObj;$/;"	v
+d	cve.cc	/^	GLfloat a, b, c, d;$/;"	m	struct:Plane	file:
+data	block.h	/^    vector <vector <vector <int> > > data;$/;"	m	class:Block
+data	texture.h	/^      char *data;$/;"	m	struct:Texture::Image
+dataOnBuffer	buffer.h	/^    int writeCursor, readCursor, dataOnBuffer;$/;"	m	class:Buffer
+dataReceived	server.cc	/^char dataReceived[MAXCLIENTS][MAXRECVDATASIZE+1]; \/\/ add on id$/;"	v
+dead	explosion.h	/^    bool dead;$/;"	m	class:Explosion
+dealZeros	client.cc	/^string Client::dealZeros(float num)$/;"	f	class:Client
+dealZeros	clientwrapper.cc	/^string ClientWrapper::dealZeros(float num)$/;"	f	class:ClientWrapper
+diffuse0	cve.cc	/^GLfloat diffuse0[] = { 0.6, 0.6, 0.6, 0.5 };$/;"	v
+diffuse1	cve.cc	/^GLfloat diffuse1[] = { 0.2, 0.2, 0.2, 0.2 };$/;"	v
+display	cve.cc	/^void display()$/;"	f
+display3DText	cve.cc	/^void display3DText(int texture)$/;"	f
+displayStereo	cve.cc	/^void displayStereo()$/;"	f
+displayText	cve.cc	/^void displayText(string str, float x, float y)$/;"	f
+distanceMoved	pawn.h	/^    float distanceMoved;$/;"	m	class:Pawn
+doClient	client.cc	/^void Client::doClient(Pawn& player, vector <Human>& humans, vector <Block> &blocks, int &blockType, bool &gravity, bool &receivedLock, vector <int> &receivedRemoveLayer)$/;"	f	class:Client
+doClientWrapper	clientwrapper.cc	/^void ClientWrapper::doClientWrapper(Pawn& player, vector <Human>& humans, vector <Block> &blocks, int &blockType, bool &gravity, bool &receivedLock, vector <int> &receivedRemoveLayer)$/;"	f	class:ClientWrapper
+doGameOver	cve.cc	/^void doGameOver()$/;"	f
+doServer	server.cc	/^void doServer()$/;"	f
+doShadowPass	cve.cc	/^void doShadowPass( ShadowedObject& object, GLfloat *lightPosition)$/;"	f
+draw	block.cc	/^void Block::draw(vector <int>& texId, bool selected)$/;"	f	class:Block
+draw	explosion.cc	/^void Explosion::draw(vector <int> &texId)$/;"	f	class:Explosion
+draw	human.cc	/^void Human::draw(vector <int>& texId, int texMain)$/;"	f	class:Human
+drawArrow	block.cc	/^void Block::drawArrow()$/;"	f	class:Block
+drawArrows	block.cc	/^void Block::drawArrows()$/;"	f	class:Block
+drawBlocks	cve.cc	/^void drawBlocks()$/;"	f
+drawBoundaries	cve.cc	/^void drawBoundaries()$/;"	f
+drawCollisionArray	cve.cc	/^void drawCollisionArray()$/;"	f
+drawConnectionCount	cve.cc	/^int drawConnectionCount = DRAW_CONNECTION_COUNT_MAX;$/;"	v
+drawCube	block.cc	/^void Block::drawCube()$/;"	f	class:Block
+drawCurvedArrow	block.cc	/^void Block::drawCurvedArrow()$/;"	f	class:Block
+drawGround	cve.cc	/^void drawGround()$/;"	f
+drawLocalConnection	cve.cc	/^void drawLocalConnection()$/;"	f
+drawObject	cve.cc	/^void drawObject( const ShadowedObject& object )$/;"	f
+drawRemoteConnection	cve.cc	/^void drawRemoteConnection(int blockNum, int humanNum)$/;"	f
+drawSkybox	cve.cc	/^void drawSkybox()$/;"	f
+drawWallMark	block.cc	/^void Block::drawWallMark(vector <int> &texId)$/;"	f	class:Block
+drawWalls	cve.cc	/^void drawWalls()$/;"	f
+elapsedTime	cve.cc	/^int frame=0,elapsedTime=0,timebase=0;$/;"	v
+explosions	cve.cc	/^deque <Explosion> explosions;$/;"	v
+fadeSpeed	explosion.h	/^    float size, growSpeed, alpha, fadeSpeed;$/;"	m	class:Explosion
+filenames	cve.cc	/^vector <string> Texture::filenames;$/;"	m	class:Texture	file:
+filenames	texture.h	/^    static vector <string> filenames;$/;"	m	class:Texture
+fps	cve.cc	/^float fps;$/;"	v
+fpsStore	cve.cc	/^vector <int> fpsStore; \/\/ store FPS values$/;"	v
+frame	cve.cc	/^int frame=0,elapsedTime=0,timebase=0;$/;"	v
+friction	pawn.h	/^    float friction, resistance;$/;"	m	class:Pawn
+gameNumber	cve.cc	/^int gameNumber = 0; \/\/ increased upon first call to newgame$/;"	v
+gameOver	block.h	/^    bool gameOver;$/;"	m	class:Block
+gameOver	cve.cc	/^bool gameOver = false;$/;"	v
+gameOverCount	cve.cc	/^int gameOverCount = GAMEOVER_COUNT_MAX;$/;"	v
+gameStartTime	cve.cc	/^int gameStartTime = 0, numberOfLayers = 0;$/;"	v
+getAccel	pawn.cc	/^float Pawn::getAccel() const$/;"	f	class:Pawn
+getAngleX	pawn.cc	/^float Pawn::getAngleX() const$/;"	f	class:Pawn
+getAngleY	pawn.cc	/^float Pawn::getAngleY() const$/;"	f	class:Pawn
+getAngleZ	pawn.cc	/^float Pawn::getAngleZ() const$/;"	f	class:Pawn
+getChar	buffer.cc	/^bool Buffer::getChar(char &c, int offset)$/;"	f	class:Buffer
+getConfirmedMatrix	block.cc	/^float Block::getConfirmedMatrix(int i)$/;"	f	class:Block
+getConfirmedX	block.cc	/^float Block::getConfirmedX()$/;"	f	class:Block
+getConfirmedY	block.cc	/^float Block::getConfirmedY()$/;"	f	class:Block
+getConfirmedZ	block.cc	/^float Block::getConfirmedZ()$/;"	f	class:Block
+getData	block.cc	/^int Block::getData(int x, int y, int z) const$/;"	f	class:Block
+getDataOnBuffer	buffer.cc	/^int Buffer::getDataOnBuffer() const$/;"	f	class:Buffer
+getDead	explosion.cc	/^bool Explosion::getDead()$/;"	f	class:Explosion
+getDistanceMoved	pawn.cc	/^float Pawn::getDistanceMoved()$/;"	f	class:Pawn
+getGameOver	block.cc	/^bool Block::getGameOver()$/;"	f	class:Block
+getGotConfirmed	block.cc	/^bool Block::getGotConfirmed()$/;"	f	class:Block
+getGrounded	block.cc	/^bool Block::getGrounded()$/;"	f	class:Block
+getId	block.cc	/^int Block::getId()$/;"	f	class:Block
+getInteractive	block.cc	/^bool Block::getInteractive()$/;"	f	class:Block
+getLayer	block.cc	/^vector <vector <float> > Block::getLayer(int layerY)$/;"	f	class:Block
+getLocked	human.cc	/^int Human::getLocked()$/;"	f	class:Human
+getLockedBy	block.cc	/^int Block::getLockedBy()$/;"	f	class:Block
+getMaster	client.cc	/^bool Client::getMaster()$/;"	f	class:Client
+getMaster	clientwrapper.cc	/^bool ClientWrapper::getMaster()$/;"	f	class:ClientWrapper
+getMatrix	block.cc	/^float Block::getMatrix(int i)$/;"	f	class:Block
+getMatrix	block.cc	/^void Block::getMatrix(float m[])$/;"	f	class:Block
+getMaxSpeed	pawn.cc	/^float Pawn::getMaxSpeed() const$/;"	f	class:Pawn
+getMoving	block.cc	/^bool Block::getMoving()$/;"	f	class:Block
+getNumberOfCubes	block.cc	/^int Block::getNumberOfCubes()$/;"	f	class:Block
+getPivotCoords	block.cc	/^void Block::getPivotCoords(float &wx, float &wy, float &wz)$/;"	f	class:Block
+getPivotX	block.cc	/^int Block::getPivotX()$/;"	f	class:Block
+getPivotY	block.cc	/^int Block::getPivotY()$/;"	f	class:Block
+getPivotZ	block.cc	/^int Block::getPivotZ()$/;"	f	class:Block
+getRemoteMovement	block.cc	/^bool Block::getRemoteMovement()$/;"	f	class:Block
+getSpeed	pawn.cc	/^float Pawn::getSpeed() const$/;"	f	class:Pawn
+getStrafeRightSpeed	pawn.cc	/^float Pawn::getStrafeRightSpeed() const$/;"	f	class:Pawn
+getTargetAngleX	block.cc	/^float Block::getTargetAngleX()$/;"	f	class:Block
+getTargetAngleY	block.cc	/^float Block::getTargetAngleY()$/;"	f	class:Block
+getTargetAngleZ	block.cc	/^float Block::getTargetAngleZ()$/;"	f	class:Block
+getTargetX	block.cc	/^float Block::getTargetX()$/;"	f	class:Block
+getTargetY	block.cc	/^float Block::getTargetY()$/;"	f	class:Block
+getTargetZ	block.cc	/^float Block::getTargetZ()$/;"	f	class:Block
+getTurnedX	block.cc	/^float Block::getTurnedX()$/;"	f	class:Block
+getTurnedY	block.cc	/^float Block::getTurnedY()$/;"	f	class:Block
+getTurnedZ	block.cc	/^float Block::getTurnedZ()$/;"	f	class:Block
+getTurning	block.cc	/^bool Block::getTurning()$/;"	f	class:Block
+getType	block.cc	/^int Block::getType()$/;"	f	class:Block
+getX	pawn.cc	/^float Pawn::getX() const$/;"	f	class:Pawn
+getY	pawn.cc	/^float Pawn::getY() const$/;"	f	class:Pawn
+getZ	pawn.cc	/^float Pawn::getZ() const$/;"	f	class:Pawn
+go	explosion.cc	/^void Explosion::go()$/;"	f	class:Explosion
+gotConfirmed	block.h	/^    bool gotConfirmed;$/;"	m	class:Block
+gotIpAddress	cve.cc	/^bool gotIpAddress = false;$/;"	v
+gravity	cve.cc	/^void gravity(int value)$/;"	f
+gravityTimer	cve.cc	/^int gravityTimer = GRAVITY_COUNT_START; \/\/ for moving down blocks$/;"	v
+ground	pawn.h	/^    float ground, height, ceil;$/;"	m	class:Pawn
+grounded	block.h	/^    bool grounded; \/\/ is block grounded? if so don't check collision$/;"	m	class:Block
+growSpeed	explosion.h	/^    float size, growSpeed, alpha, fadeSpeed;$/;"	m	class:Explosion
+height	pawn.h	/^    float ground, height, ceil;$/;"	m	class:Pawn
+hit	block.cc	/^void Block::hit()$/;"	f	class:Block
+hitCount	block.h	/^    int hitCount; \/\/ how many times have we collided?$/;"	m	class:Block
+host	client.h	/^    struct hostent *host;$/;"	m	class:Client	typeref:struct:Client::hostent
+humanFace	cve.cc	/^int humanFace = 6; \/\/ texture of human$/;"	v
+humanIds	client.h	/^    vector <int> humanIds;$/;"	m	class:Client
+humanIds	clientwrapper.h	/^    vector <int> humanIds;$/;"	m	class:ClientWrapper
+humans	cve.cc	/^vector <Human> humans;$/;"	v
+id	block.h	/^    int id;$/;"	m	class:Block
+id	client.h	/^    int sendPositionCount, sendDelay, id;$/;"	m	class:Client
+id	clientwrapper.h	/^    int id;$/;"	m	class:ClientWrapper
+id	pawn.h	/^    int id;$/;"	m	class:Pawn
+idle	cve.cc	/^void idle(int value)$/;"	f
+imageLoad	texture.h	/^    static int imageLoad(const char *filename, Image *image)$/;"	f	class:Texture
+init	client.cc	/^void Client::init()$/;"	f	class:Client
+init	clientwrapper.cc	/^void ClientWrapper::init()$/;"	f	class:ClientWrapper
+init	cve.cc	/^void init()$/;"	f
+init	texture.h	/^    static void init()$/;"	f	class:Texture
+init	trig.h	/^    static void init() {$/;"	f	class:Trig
+intToChar	client.cc	/^char Client::intToChar(int n) {$/;"	f	class:Client
+intToChar	clientwrapper.cc	/^char ClientWrapper::intToChar(int n) {$/;"	f	class:ClientWrapper
+interactive	block.h	/^    bool interactive; \/\/ can block be manipulated by a user?$/;"	m	class:Block
+invertMouse	cve.cc	/^bool invertMouse = false;$/;"	v
+keyboard	cve.cc	/^void keyboard(unsigned char key, int x, int y)$/;"	f
+keyboardUp	cve.cc	/^void keyboardUp(unsigned char key, int x, int y)$/;"	f
+killObject	cve.cc	/^void killObject( ShadowedObject &object )$/;"	f
+lastAmountX	human.h	/^    float lastAmountX, lastAmountY, lastAmountZ;$/;"	m	class:Human
+lastAmountY	human.h	/^    float lastAmountX, lastAmountY, lastAmountZ;$/;"	m	class:Human
+lastAmountZ	human.h	/^    float lastAmountX, lastAmountY, lastAmountZ;$/;"	m	class:Human
+lastStored	block.h	/^    vector <vector <int> > lastStored; \/\/ store old position\/collision trail$/;"	m	class:Block
+layerFound	server.cc	/^vector <int> layerFound;$/;"	v
+lightCoords0	cve.cc	/^GLfloat lightCoords0[] = { -15.0, 149.0, 6.0, 0 };$/;"	v
+lightCoords1	cve.cc	/^GLfloat lightCoords1[] = { 298.0, 25.0, -145.0, 0 };$/;"	v
+listenSock	server.cc	/^int listenSock, new_fd, numbytes;  \/\/ listen on sock_fd, new connection on new_fd$/;"	v
+loadTextures	texture.h	/^    static void loadTextures()$/;"	f	class:Texture
+lock	block.cc	/^void Block::lock(int i)$/;"	f	class:Block
+lockPosition	pawn.cc	/^void Pawn::lockPosition(float oldX, float oldY, float oldZ, float oldGround)$/;"	f	class:Pawn
+locked	human.h	/^    int locked; \/\/ which block is locked$/;"	m	class:Human
+lockedBy	block.h	/^    int lockedBy;$/;"	m	class:Block
+loopAngles	pawn.cc	/^void Pawn::loopAngles()$/;"	f	class:Pawn
+main	cve.cc	/^int main(int argc, char** argv)$/;"	f
+main	server.cc	/^int main(int argc, char** argv)$/;"	f
+makeCube	cve.cc	/^void makeCube( ShadowedObject &object )$/;"	f
+makeNewHuman	client.cc	/^int Client::makeNewHuman(int id, vector <Human>& humans)$/;"	f	class:Client
+makeNewHuman	clientwrapper.cc	/^int ClientWrapper::makeNewHuman(int id, vector <Human>& humans)$/;"	f	class:ClientWrapper
+makeShadowBlocks	cve.cc	/^void makeShadowBlocks()$/;"	f
+manipBuf	client.h	/^    Buffer sendBuf, moveBuf, manipBuf;$/;"	m	class:Client
+manipulateBlock	client.cc	/^void Client::manipulateBlock(vector <Block> &blocks, int blockNum, char axis, int direction)$/;"	f	class:Client
+manipulateBlock	clientwrapper.cc	/^void ClientWrapper::manipulateBlock(vector <Block> &blocks, int blockNum, char axis, int direction)$/;"	f	class:ClientWrapper
+master	client.h	/^    bool master; \/\/ master or slave?$/;"	m	class:Client
+master	clientwrapper.h	/^    bool master; \/\/ master or slave?$/;"	m	class:ClientWrapper
+matrix	block.h	/^    float matrix[16], confirmedMatrix[16];$/;"	m	class:Block
+matrixCopy	block.cc	/^void Block::matrixCopy(const float m1[16], float m2[16])$/;"	f	class:Block
+matrixCorrectRoundingError	block.cc	/^void Block::matrixCorrectRoundingError(float m1[])$/;"	f	class:Block
+matrixPrint	block.cc	/^void Block::matrixPrint( const float m1[] )$/;"	f	class:Block
+maxSock	server.cc	/^int maxSock = 0;$/;"	v
+maxSpeed	pawn.h	/^    float speed, accel, maxSpeed, strafeRightSpeed;$/;"	m	class:Pawn
+messNum	server.cc	/^int messNum = 0;$/;"	v
+message	cve.cc	/^string message;$/;"	v
+messageCount	cve.cc	/^int messageCount = -1; \/\/ infinate time for training messages$/;"	v
+mode	block.h	/^    int mode;$/;"	m	class:Block
+modifierKeys	cve.cc	/^int modifierKeys;$/;"	v
+mouseActiveMove	cve.cc	/^void mouseActiveMove(int x, int y)$/;"	f
+mouseLastAngle	cve.cc	/^float mouseSensitivity = 0.1, mouseLastAngle = 0.0;$/;"	v
+mouseLook	cve.cc	/^void mouseLook(int x, int y)$/;"	f
+mouseLookEnabled	cve.cc	/^bool mouseLookEnabled = true;$/;"	v
+mouseMoveX	cve.cc	/^int mouseMoveX = 0, mouseMoveY = 0; \/\/, mouseLastX = 0, mouseLastY = 0;$/;"	v
+mouseMoveY	cve.cc	/^int mouseMoveX = 0, mouseMoveY = 0; \/\/, mouseLastX = 0, mouseLastY = 0;$/;"	v
+mousePassiveMove	cve.cc	/^void mousePassiveMove(int x, int y)$/;"	f
+mousePress	cve.cc	/^void mousePress(int button, int state, int x, int y)$/;"	f
+mouseSensitivity	cve.cc	/^float mouseSensitivity = 0.1, mouseLastAngle = 0.0;$/;"	v
+move	block.cc	/^void Block::move(vector <Block> &blocks, float boundaries[],$/;"	f	class:Block
+move	human.cc	/^void Human::move()$/;"	f	class:Human
+move	pawn.cc	/^void Pawn::move( const float timeSecs )$/;"	f	class:Pawn
+moveBlock	client.cc	/^void Client::moveBlock(vector <Block> &blocks, int blockNum, int direction)$/;"	f	class:Client
+moveBlock	clientwrapper.cc	/^void ClientWrapper::moveBlock(vector <Block> &blocks, int blockNum, int direction)$/;"	f	class:ClientWrapper
+moveBuf	client.h	/^    Buffer sendBuf, moveBuf, manipBuf;$/;"	m	class:Client
+moveLeft	pawn.cc	/^void Pawn::moveLeft( const float amount )$/;"	f	class:Pawn
+moveRight	pawn.cc	/^void Pawn::moveRight( const float amount )$/;"	f	class:Pawn
+moving	block.h	/^    bool turning, moving;$/;"	m	class:Block
+my_addr	server.cc	/^struct sockaddr_in my_addr;    \/\/ my address information$/;"	v	typeref:struct:sockaddr_in
+nFaces	cve.cc	/^	int nFaces;$/;"	m	struct:ShadowedObject	file:
+nVertices	cve.cc	/^	int nVertices;$/;"	m	struct:ShadowedObject	file:
+neighbourIndices	cve.cc	/^	int neighbourIndices[3];		\/\/ Index Of Each Face That Neighbours This One Within The Object$/;"	m	struct:Face	file:
+net	clientwrapper.h	/^    Net net;$/;"	m	class:ClientWrapper
+network	cve.cc	/^bool network = false;$/;"	v
+newBlock	cve.cc	/^void newBlock(int type)$/;"	f
+newBlock	server.cc	/^void newBlock()$/;"	f
+newBlockCount	server.cc	/^float newBlockCount = (float) (NEW_BLOCK_COUNT_START \/ 1000);$/;"	v
+newBlockTimer	cve.cc	/^int blockId = 1, newBlockTimer = NEW_BLOCK_COUNT_START; \/\/ for making new blocks appear$/;"	v
+newBlockTimer	server.cc	/^clock_t newBlockTimer; \/\/ for making new blocks appear$/;"	v
+newGame	cve.cc	/^void newGame()$/;"	f
+newPosition	block.h	/^    vector <vector <int> > newPosition; \/\/ store new position of blocks$/;"	m	class:Block
+new_fd	server.cc	/^int listenSock, new_fd, numbytes;  \/\/ listen on sock_fd, new connection on new_fd$/;"	v
+normals	cve.cc	/^	Point3f normals[3];			\/\/ Normals To Each Vertex$/;"	m	struct:Face	file:
+numHosts	server.cc	/^int numHosts=0;$/;"	v
+numberOfLayers	cve.cc	/^int gameStartTime = 0, numberOfLayers = 0;$/;"	v
+numbytes	client.h	/^    int numbytes, receivedCursor;$/;"	m	class:Client
+numbytes	clientwrapper.h	/^    int numbytes, receivedCursor;$/;"	m	class:ClientWrapper
+numbytes	server.cc	/^int listenSock, new_fd, numbytes;  \/\/ listen on sock_fd, new connection on new_fd$/;"	v
+oldConfirmedX	block.h	/^    float oldConfirmedX, oldConfirmedY, oldConfirmedZ;$/;"	m	class:Block
+oldConfirmedY	block.h	/^    float oldConfirmedX, oldConfirmedY, oldConfirmedZ;$/;"	m	class:Block
+oldConfirmedZ	block.h	/^    float oldConfirmedX, oldConfirmedY, oldConfirmedZ;$/;"	m	class:Block
+oldMatrix	block.h	/^    float oldMatrix[16];$/;"	m	class:Block
+oldNetworkData	client.h	/^    string oldNetworkData;$/;"	m	class:Client
+oldNetworkData	clientwrapper.h	/^    string oldNetworkData;$/;"	m	class:ClientWrapper
+oldX	block.h	/^    float oldX, oldY, oldZ;$/;"	m	class:Block
+oldY	block.h	/^    float oldX, oldY, oldZ;$/;"	m	class:Block
+oldZ	block.h	/^    float oldX, oldY, oldZ;$/;"	m	class:Block
+originalCheckCollision	block.cc	/^bool Block::originalCheckCollision(vector <Block> &blocks, float boundaries[])$/;"	f	class:Block
+out	clientwrapper.h	/^    Outverbose out;$/;"	m	class:ClientWrapper
+output	block.cc	/^void Block::output()$/;"	f	class:Block
+output	cve.cc	/^bool output = false, pauseGame = false;$/;"	v
+outputMatrix	block.h	/^    float outputMatrix[16];$/;"	m	class:Block
+overflow	client.h	/^    bool overflow;$/;"	m	class:Client
+pFaces	cve.cc	/^	Face *pFaces;				\/\/ Will Be Dynamically Allocated$/;"	m	struct:ShadowedObject	file:
+pVertices	cve.cc	/^	Point3f *pVertices;			\/\/ Will Be Dynamically Allocated$/;"	m	struct:ShadowedObject	file:
+pauseGame	cve.cc	/^bool output = false, pauseGame = false;$/;"	v
+pivotX	block.h	/^    int pivotX, pivotY, pivotZ;$/;"	m	class:Block
+pivotY	block.h	/^    int pivotX, pivotY, pivotZ;$/;"	m	class:Block
+pivotZ	block.h	/^    int pivotX, pivotY, pivotZ;$/;"	m	class:Block
+planeEquation	cve.cc	/^	Plane planeEquation;			\/\/ Equation Of A Plane That Contains This Triangle$/;"	m	struct:Face	file:
+player	cve.cc	/^Pawn player;$/;"	v
+pointHeight	pawn.h	/^    vector <float> pointHeight;$/;"	m	class:Pawn
+postRedisplay	cve.cc	/^void postRedisplay(int value)$/;"	f
+pressDown	cve.cc	/^bool pressUp = false, pressDown = false, pressRight = false, pressLeft = false, pressRaise = false, pressLower = false;$/;"	v
+pressLeft	cve.cc	/^bool pressUp = false, pressDown = false, pressRight = false, pressLeft = false, pressRaise = false, pressLower = false;$/;"	v
+pressLeftButton	cve.cc	/^bool pressLeftButton = false, pressRightButton = false;$/;"	v
+pressLower	cve.cc	/^bool pressUp = false, pressDown = false, pressRight = false, pressLeft = false, pressRaise = false, pressLower = false;$/;"	v
+pressRaise	cve.cc	/^bool pressUp = false, pressDown = false, pressRight = false, pressLeft = false, pressRaise = false, pressLower = false;$/;"	v
+pressRight	cve.cc	/^bool pressUp = false, pressDown = false, pressRight = false, pressLeft = false, pressRaise = false, pressLower = false;$/;"	v
+pressRightButton	cve.cc	/^bool pressLeftButton = false, pressRightButton = false;$/;"	v
+pressTurnDown	cve.cc	/^bool pressTurnRight = false, pressTurnLeft = false, pressTurnUp = false, pressTurnDown = false;$/;"	v
+pressTurnLeft	cve.cc	/^bool pressTurnRight = false, pressTurnLeft = false, pressTurnUp = false, pressTurnDown = false;$/;"	v
+pressTurnRight	cve.cc	/^bool pressTurnRight = false, pressTurnLeft = false, pressTurnUp = false, pressTurnDown = false;$/;"	v
+pressTurnUp	cve.cc	/^bool pressTurnRight = false, pressTurnLeft = false, pressTurnUp = false, pressTurnDown = false;$/;"	v
+pressUp	cve.cc	/^bool pressUp = false, pressDown = false, pressRight = false, pressLeft = false, pressRaise = false, pressLower = false;$/;"	v
+priorityY	cve.cc	/^bool priorityY = false;$/;"	v
+processHits	cve.cc	/^void processHits(GLint hits, GLuint buffer[])$/;"	f
+pushX	pawn.h	/^    float pushX, pushY, pushZ;$/;"	m	class:Pawn
+pushY	pawn.h	/^    float pushX, pushY, pushZ;$/;"	m	class:Pawn
+pushZ	pawn.h	/^    float pushX, pushY, pushZ;$/;"	m	class:Pawn
+read	buffer.cc	/^int Buffer::read(char readStr[], int n)$/;"	f	class:Buffer
+readCursor	buffer.h	/^    int writeCursor, readCursor, dataOnBuffer;$/;"	m	class:Buffer
+readSocks	client.h	/^    fd_set readSocks; \/\/ sockets to read from$/;"	m	class:Client
+readSocks	server.cc	/^fd_set readSocks;$/;"	v
+readyToSend	client.h	/^    int readyToSend;$/;"	m	class:Client
+readyToSend	clientwrapper.h	/^    int readyToSend;$/;"	m	class:ClientWrapper
+receiveData	server.cc	/^void receiveData()$/;"	f
+receivedCursor	client.h	/^    int numbytes, receivedCursor;$/;"	m	class:Client
+receivedCursor	clientwrapper.h	/^    int numbytes, receivedCursor;$/;"	m	class:ClientWrapper
+receivedCursor	server.cc	/^int receivedCursor[MAXCLIENTS];$/;"	v
+receivedRemoveLayer	cve.cc	/^vector <int> receivedRemoveLayer;$/;"	v
+receivedSoFar	client.h	/^    char receivedSoFar[MAXRECVDATASIZE];$/;"	m	class:Client
+receivedSoFar	clientwrapper.h	/^    char receivedSoFar[MAXRECVDATASIZE];$/;"	m	class:ClientWrapper
+remoteMovement	block.h	/^    bool remoteMovement;$/;"	m	class:Block
+removeLayer	block.cc	/^bool Block::removeLayer(vector <Block> blocks, vector <Block> &outputBlocks, int collisionArray[GAMEAREA_WIDTH][GAMEAREA_HEIGHT][GAMEAREA_DEPTH], float boundaries[], int &blockId, int layerY)$/;"	f	class:Block
+resetDistanceMoved	pawn.cc	/^void Pawn::resetDistanceMoved()$/;"	f	class:Pawn
+reshape	cve.cc	/^void reshape(int w, int h)$/;"	f
+resistance	pawn.h	/^    float friction, resistance;$/;"	m	class:Pawn
+rightFrustumBorder	cve.cc	/^float rightFrustumBorder, topFrustumBorder;$/;"	v
+rotateX	block.cc	/^void Block::rotateX(float angle)$/;"	f	class:Block
+rotateY	block.cc	/^void Block::rotateY(float angle)$/;"	f	class:Block
+rotateZ	block.cc	/^void Block::rotateZ(float angle)$/;"	f	class:Block
+safelyStoredSize	block.h	/^    int safelyStoredSize;$/;"	m	class:Block
+score	cve.cc	/^int score = 0, scoreCount = 0; \/\/ score count is used to allow for multiple completed layers$/;"	v
+scoreCount	cve.cc	/^int score = 0, scoreCount = 0; \/\/ score count is used to allow for multiple completed layers$/;"	v
+secondsElapsed	server.cc	/^int secondsElapsed()$/;"	f
+selectedBlock	cve.cc	/^int selectedBlock = -1; \/\/ id of block selected$/;"	v
+selectedX	cve.cc	/^int selectedX = 0, selectedY = 0;$/;"	v
+selectedY	cve.cc	/^int selectedX = 0, selectedY = 0;$/;"	v
+sendBlock	client.h	/^    int sendBlock;$/;"	m	class:Client
+sendBlock	clientwrapper.h	/^    int sendBlock;$/;"	m	class:ClientWrapper
+sendBuf	client.h	/^    Buffer sendBuf, moveBuf, manipBuf;$/;"	m	class:Client
+sendData	client.cc	/^void Client::sendData(string networkData)$/;"	f	class:Client
+sendData	clientwrapper.cc	/^void ClientWrapper::sendData(string networkData)$/;"	f	class:ClientWrapper
+sendData	server.cc	/^void sendData()$/;"	f
+sendDelay	client.h	/^    int sendPositionCount, sendDelay, id;$/;"	m	class:Client
+sendPositionCount	client.h	/^    int sendPositionCount, sendDelay, id;$/;"	m	class:Client
+sentFoundLayer	cve.cc	/^vector <int> sentFoundLayer;$/;"	v
+serverAccept	server.cc	/^void serverAccept()$/;"	f
+serverAddress	client.h	/^    struct sockaddr_in serverAddress; \/\/ server address information $/;"	m	class:Client	typeref:struct:Client::sockaddr_in
+serverInit	server.cc	/^void serverInit()$/;"	f
+serverMessage	server.cc	/^char serverMessage[MAX_SERVER_MESSAGE_SIZE];$/;"	v
+serverStartTime	server.cc	/^clock_t serverStartTime;$/;"	v
+setAngleX	pawn.cc	/^void Pawn::setAngleX( const float nAngleX )$/;"	f	class:Pawn
+setAngleY	pawn.cc	/^void Pawn::setAngleY( const float nAngleY )$/;"	f	class:Pawn
+setAngleZ	pawn.cc	/^void Pawn::setAngleZ( const float nAngleZ )$/;"	f	class:Pawn
+setCeil	pawn.cc	/^void Pawn::setCeil( const float cl )$/;"	f	class:Pawn
+setConfirmedMatrix	block.cc	/^void Block::setConfirmedMatrix(int i, float v)$/;"	f	class:Block
+setConfirmedX	block.cc	/^void Block::setConfirmedX(float n)$/;"	f	class:Block
+setConfirmedY	block.cc	/^void Block::setConfirmedY(float n)$/;"	f	class:Block
+setConfirmedZ	block.cc	/^void Block::setConfirmedZ(float n)$/;"	f	class:Block
+setConnectivity	cve.cc	/^void setConnectivity( ShadowedObject& object)$/;"	f
+setGotConfirmed	block.cc	/^void Block::setGotConfirmed(bool b)$/;"	f	class:Block
+setGround	pawn.cc	/^void Pawn::setGround( const float gr )$/;"	f	class:Pawn
+setGrounded	block.cc	/^void Block::setGrounded(bool g)$/;"	f	class:Block
+setHost	client.cc	/^void Client::setHost(const char* ip)$/;"	f	class:Client
+setHost	clientwrapper.cc	/^void ClientWrapper::setHost(const char* ip)$/;"	f	class:ClientWrapper
+setInteractive	block.cc	/^void Block::setInteractive(bool b)$/;"	f	class:Block
+setLocked	human.cc	/^void Human::setLocked(int n)$/;"	f	class:Human
+setMatrix	block.cc	/^void Block::setMatrix(int i, float v)$/;"	f	class:Block
+setMode	block.cc	/^void Block::setMode(int m)$/;"	f	class:Block
+setReadyToSend	client.cc	/^void Client::setReadyToSend(int value)$/;"	f	class:Client
+setReadyToSend	clientwrapper.cc	/^void ClientWrapper::setReadyToSend(int value)$/;"	f	class:ClientWrapper
+setReadyToSend	cve.cc	/^void setReadyToSend(int value)$/;"	f
+setRemoteMovement	block.cc	/^void Block::setRemoteMovement(bool b)$/;"	f	class:Block
+setSpeed	pawn.cc	/^void Pawn::setSpeed( const float ns )$/;"	f	class:Pawn
+setStrafeRightSpeed	pawn.cc	/^void Pawn::setStrafeRightSpeed( const float ns )$/;"	f	class:Pawn
+setTargetAngleX	block.cc	/^void Block::setTargetAngleX(const float a)$/;"	f	class:Block
+setTargetAngleX	human.cc	/^void Human::setTargetAngleX(const float n)$/;"	f	class:Human
+setTargetAngleY	block.cc	/^void Block::setTargetAngleY(const float a)$/;"	f	class:Block
+setTargetAngleY	human.cc	/^void Human::setTargetAngleY(const float n)$/;"	f	class:Human
+setTargetAngleZ	block.cc	/^void Block::setTargetAngleZ(const float a)$/;"	f	class:Block
+setTargetPosition	block.cc	/^void Block::setTargetPosition(float nx, float ny, float nz)$/;"	f	class:Block
+setTargetX	human.cc	/^void Human::setTargetX(const float n)$/;"	f	class:Human
+setTargetY	human.cc	/^void Human::setTargetY(const float n)$/;"	f	class:Human
+setTargetZ	human.cc	/^void Human::setTargetZ(const float n)$/;"	f	class:Human
+setTexFace	human.cc	/^void Human::setTexFace(int n)$/;"	f	class:Human
+setType	block.cc	/^void Block::setType(int t)$/;"	f	class:Block
+setX	pawn.cc	/^void Pawn::setX( const float nx )$/;"	f	class:Pawn
+setY	pawn.cc	/^void Pawn::setY( const float ny )$/;"	f	class:Pawn
+setZ	pawn.cc	/^void Pawn::setZ( const float nz )$/;"	f	class:Pawn
+shadow	cve.cc	/^bool stereo = false, shadow = false;$/;"	v
+shadowBlock	cve.cc	/^ShadowedObject shadowBlock[8]; \/\/ 8 types of block$/;"	v
+sinValues	cve.cc	/^float Trig::sinValues[721];$/;"	m	class:Trig	file:
+sinValues	trig.h	/^    static float sinValues[721];$/;"	m	class:Trig
+sin_size	server.cc	/^int sin_size;$/;"	v
+size	explosion.h	/^    float size, growSpeed, alpha, fadeSpeed;$/;"	m	class:Explosion
+sizeX	texture.h	/^      unsigned sizeX;$/;"	m	struct:Texture::Image
+sizeY	texture.h	/^      unsigned sizeY;$/;"	m	struct:Texture::Image
+sn	trig.h	/^    static float sn(float n) {$/;"	f	class:Trig
+snap	block.cc	/^void Block::snap()$/;"	f	class:Block
+sockfd	client.h	/^    int sockfd; \/\/ socket file descriptor$/;"	m	class:Client
+sockoptyes	server.cc	/^int sockoptyes=1;$/;"	v
+specialKeyPress	cve.cc	/^void specialKeyPress(int key, int x, int y)$/;"	f
+specialKeyUp	cve.cc	/^void specialKeyUp(int key, int x, int y)$/;"	f
+specular0	cve.cc	/^GLfloat specular0[] = { 0.4, 0.4, 0.4, 0.4 };$/;"	v
+specular1	cve.cc	/^GLfloat specular1[] = { 0.2, 0.2, 0.2, 0.2 };$/;"	v
+speed	pawn.h	/^    float speed, accel, maxSpeed, strafeRightSpeed;$/;"	m	class:Pawn
+speedCount	cve.cc	/^int speedCount = 5;$/;"	v
+speedX	pawn.h	/^    float speedX, speedY, speedZ;$/;"	m	class:Pawn
+speedY	pawn.h	/^    float speedX, speedY, speedZ;$/;"	m	class:Pawn
+speedZ	pawn.h	/^    float speedX, speedY, speedZ;$/;"	m	class:Pawn
+startedGravity	server.cc	/^bool assignedMaster = false, startedGravity = false;$/;"	v
+stereo	cve.cc	/^bool stereo = false, shadow = false;$/;"	v
+stopGravity	cve.cc	/^bool stopGravity = false;$/;"	v
+strafeLeft	pawn.cc	/^void Pawn::strafeLeft( const float timeSecs )$/;"	f	class:Pawn
+strafeRight	pawn.cc	/^void Pawn::strafeRight( const float timeSecs )$/;"	f	class:Pawn
+strafeRightSpeed	pawn.h	/^    float speed, accel, maxSpeed, strafeRightSpeed;$/;"	m	class:Pawn
+swap	cve.cc	/^void swap(float &a, float &b)$/;"	f
+targetAngleX	block.h	/^    float targetAngleX, targetAngleY, targetAngleZ;$/;"	m	class:Block
+targetAngleX	human.h	/^    float targetX, targetY, targetZ, targetAngleX, targetAngleY;$/;"	m	class:Human
+targetAngleY	block.h	/^    float targetAngleX, targetAngleY, targetAngleZ;$/;"	m	class:Block
+targetAngleY	human.h	/^    float targetX, targetY, targetZ, targetAngleX, targetAngleY;$/;"	m	class:Human
+targetAngleZ	block.h	/^    float targetAngleX, targetAngleY, targetAngleZ;$/;"	m	class:Block
+targetX	block.h	/^    float targetX, targetY, targetZ;$/;"	m	class:Block
+targetX	human.h	/^    float targetX, targetY, targetZ, targetAngleX, targetAngleY;$/;"	m	class:Human
+targetY	block.h	/^    float targetX, targetY, targetZ;$/;"	m	class:Block
+targetY	human.h	/^    float targetX, targetY, targetZ, targetAngleX, targetAngleY;$/;"	m	class:Human
+targetZ	block.h	/^    float targetX, targetY, targetZ;$/;"	m	class:Block
+targetZ	human.h	/^    float targetX, targetY, targetZ, targetAngleX, targetAngleY;$/;"	m	class:Human
+texFace	human.h	/^    int texFace;$/;"	m	class:Human
+texId	cve.cc	/^vector <int> Texture::texId;$/;"	m	class:Texture	file:
+texId	texture.h	/^    static vector <int> texId; \/\/ the texture numbers$/;"	m	class:Texture
+texPan	cve.cc	/^float texPan = 0.0; \/\/ for panning the sky texture$/;"	v
+textAlpha	cve.cc	/^float textAlpha = TEXT_ALPHA_START;$/;"	v
+textAngleY	cve.cc	/^float textAngleY = 0.0, textY = TEXT_Y_START;$/;"	v
+textY	cve.cc	/^float textAngleY = 0.0, textY = TEXT_Y_START;$/;"	v
+their_addr	server.cc	/^struct sockaddr_in their_addr; \/\/ connector's address information$/;"	v	typeref:struct:sockaddr_in
+timeLayerFound	server.cc	/^vector <int> timeLayerFound;$/;"	v
+timebase	cve.cc	/^int frame=0,elapsedTime=0,timebase=0;$/;"	v
+timeout	client.h	/^    struct timeval timeout; \/\/ timeout for using select()$/;"	m	class:Client	typeref:struct:Client::timeval
+timeout	server.cc	/^struct timeval timeout;$/;"	v	typeref:struct:timeval
+toConfirmed	block.cc	/^void Block::toConfirmed(float boundaries[], int collisionArray[GAMEAREA_WIDTH][GAMEAREA_HEIGHT][GAMEAREA_DEPTH])$/;"	f	class:Block
+toTarget	block.cc	/^bool Block::toTarget(float &var, float amount, float target)$/;"	f	class:Block
+toTarget	pawn.cc	/^void Pawn::toTarget( float &var, float target, float amount )$/;"	f	class:Pawn
+topFrustumBorder	cve.cc	/^float rightFrustumBorder, topFrustumBorder;$/;"	v
+traffic	server.cc	/^int traffic; \/\/ number of bytes received$/;"	v
+trafficAnalysisTimer	server.cc	/^clock_t trafficAnalysisTimer; \/\/ for analysing traffic$/;"	v
+trainTimebase	cve.cc	/^int trainTimebase = 0;$/;"	v
+training	cve.cc	/^int training = TRAINING_LEVELS; \/\/ counts down to 0 which is normal play$/;"	v
+translate	block.cc	/^void Block::translate(float x, float y, float z)$/;"	f	class:Block
+transmitBufferedData	client.cc	/^void Client::transmitBufferedData()$/;"	f	class:Client
+transmitBufferedData	clientwrapper.cc	/^void ClientWrapper::transmitBufferedData()$/;"	f	class:ClientWrapper
+turn	pawn.cc	/^void Pawn::turn(float right, float up)$/;"	f	class:Pawn
+turn3D	block.cc	/^void Block::turn3D(float turnX, float turnY, float turnZ)$/;"	f	class:Block
+turnGlobalReference	block.cc	/^void Block::turnGlobalReference( const float timeSecs )$/;"	f	class:Block
+turnLeft	pawn.cc	/^void Pawn::turnLeft()$/;"	f	class:Pawn
+turnRight	pawn.cc	/^void Pawn::turnRight()$/;"	f	class:Pawn
+turnSpeed	pawn.h	/^    float turnSpeed;$/;"	m	class:Pawn
+turnToTarget	block.cc	/^void Block::turnToTarget()$/;"	f	class:Block
+turnedX	block.h	/^    float turnedX, turnedY, turnedZ;$/;"	m	class:Block
+turnedY	block.h	/^    float turnedX, turnedY, turnedZ;$/;"	m	class:Block
+turnedZ	block.h	/^    float turnedX, turnedY, turnedZ;$/;"	m	class:Block
+turning	block.h	/^    bool turning, moving;$/;"	m	class:Block
+type	block.h	/^    int type;$/;"	m	class:Block
+unGroundAbove	cve.cc	/^void unGroundAbove(float y)$/;"	f
+unGrounded	block.cc	/^void Block::unGrounded()$/;"	f	class:Block
+unlock	block.cc	/^void Block::unlock()$/;"	f	class:Block
+vertexIndices	cve.cc	/^	int vertexIndices[3];			\/\/ Index Of Each Vertex Within An Object That Makes Up The Triangle Of This Face$/;"	m	struct:Face	file:
+visible	cve.cc	/^	bool visible;				\/\/ Is The Face Visible By The Light?$/;"	m	struct:Face	file:
+wallMark	block.h	/^    float wallMark[4]; \/\/ leave mark on wall on collision$/;"	m	class:Block
+wallMarkAlpha	block.h	/^    float wallMarkAlpha;$/;"	m	class:Block
+warpBack	cve.cc	/^bool warpBack = false;$/;"	v
+welcomeCount	cve.cc	/^int welcomeCount = WELCOME_COUNT_MAX;$/;"	v
+window	cve.cc	/^int window;$/;"	v
+windowCentreX	cve.cc	/^int windowWidth, windowHeight, windowCentreX, windowCentreY; \/\/ window details$/;"	v
+windowCentreY	cve.cc	/^int windowWidth, windowHeight, windowCentreX, windowCentreY; \/\/ window details$/;"	v
+windowHeight	cve.cc	/^int windowWidth, windowHeight, windowCentreX, windowCentreY; \/\/ window details$/;"	v
+windowWidth	cve.cc	/^int windowWidth, windowHeight, windowCentreX, windowCentreY; \/\/ window details$/;"	v
+worldCoords	block.cc	/^void Block::worldCoords(float &wx, float &wy, float &wz)$/;"	f	class:Block
+write	buffer.cc	/^void Buffer::write(const char* str)$/;"	f	class:Buffer
+writeCursor	buffer.h	/^    int writeCursor, readCursor, dataOnBuffer;$/;"	m	class:Buffer
+writeSocks	client.h	/^    fd_set writeSocks; \/\/ sockets to write to$/;"	m	class:Client
+writeSocks	server.cc	/^fd_set writeSocks;$/;"	v
+x	cve.cc	/^	GLfloat x, y, z;$/;"	m	struct:Point3f	file:
+x	explosion.h	/^    float x, y, z;$/;"	m	class:Explosion
+x	pawn.h	/^    float x, y, z;$/;"	m	class:Pawn
+y	cve.cc	/^	GLfloat x, y, z;$/;"	m	struct:Point3f	file:
+y	explosion.h	/^    float x, y, z;$/;"	m	class:Explosion
+y	pawn.h	/^    float x, y, z;$/;"	m	class:Pawn
+z	cve.cc	/^	GLfloat x, y, z;$/;"	m	struct:Point3f	file:
+z	explosion.h	/^    float x, y, z;$/;"	m	class:Explosion
+z	pawn.h	/^    float x, y, z;$/;"	m	class:Pawn
